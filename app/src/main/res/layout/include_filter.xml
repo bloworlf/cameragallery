@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:divider="@drawable/horizontal_line"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <xyz.teamgravity.imageradiobutton.GravityRadioGroup
+        android:id="@+id/filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <xyz.teamgravity.imageradiobutton.GravityImageRadioButton
+            android:id="@+id/filterName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="20dp"
+            app:girbImage="@drawable/sort_by_alpha"
+            app:girbPressedTextColor="@color/white"
+            app:girbText="Alphabetical" />
+
+        <xyz.teamgravity.imageradiobutton.GravityImageRadioButton
+            android:id="@+id/filterDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="20dp"
+            app:girbImage="@drawable/filter_date"
+            app:girbPressedTextColor="@color/white"
+            app:girbText="Date Modified" />
+
+        <xyz.teamgravity.imageradiobutton.GravityImageRadioButton
+            android:id="@+id/filterSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="20dp"
+            app:girbImage="@drawable/filter_size"
+            app:girbPressedTextColor="@color/white"
+            app:girbText="Size" />
+    </xyz.teamgravity.imageradiobutton.GravityRadioGroup>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="8dp" />
+
+    <xyz.teamgravity.imageradiobutton.GravityRadioGroup
+        android:id="@+id/direction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <xyz.teamgravity.imageradiobutton.GravityImageRadioButton
+            android:id="@+id/filterAsc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="20dp"
+            app:girbImage="@drawable/arrow_up"
+            app:girbPressedTextColor="@color/white"
+            app:girbText="Asc" />
+
+        <xyz.teamgravity.imageradiobutton.GravityImageRadioButton
+            android:id="@+id/filterDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="20dp"
+            app:girbImage="@drawable/arrow_down"
+            app:girbPressedTextColor="@color/white"
+            app:girbText="Desc" />
+    </xyz.teamgravity.imageradiobutton.GravityRadioGroup>
+
+</LinearLayout>

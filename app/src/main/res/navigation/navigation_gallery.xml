@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_gallery.xml"
+    app:startDestination="@id/galleryFragment">
+
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="io.drdroid.camera_gallery.ui.fragments.GalleryFragment"
+        android:label="Gallery">
+        <action
+            android:id="@+id/gallery_to_folder"
+            app:destination="@id/galleryFolderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mediaViewFragment"
+        android:name="io.drdroid.camera_gallery.ui.fragments.GalleryViewFragment"
+        android:label="Media" />
+    <fragment
+        android:id="@+id/galleryFolderFragment"
+        android:name="io.drdroid.camera_gallery.ui.fragments.GalleryFolderFragment"
+        android:label="">
+        <action
+            android:id="@+id/folder_to_media"
+            app:destination="@id/mediaViewFragment" />
+    </fragment>
+</navigation>
